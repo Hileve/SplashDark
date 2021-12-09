@@ -1,55 +1,48 @@
+/* Copyright (C) 2020 Yusuf Usta.
+
+Licensed under the  GPL-3.0 License;
+you may not use this file except in compliance with the License.
+
+WhatsAsena - Yusuf Usta
+*/
+
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
-function convertToBool(text, fault = 'true') {
-    return text === fault ? true : false;
-}
+// Özel Fonksiyonlarımız
+function convertToBool(text, fault = 'true') { return text === fault ? true : false; };
 
-DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsalexa.db' : process.env.DATABASE_URL;
+DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'V3 Public Stable',
-    SESSION: process.env.ALEXA_SESSION === undefined ? '' : process.env.ALEXA_SESSION,
-    ANTILINK: process.env.ANTI_LINK === undefined ? 'false' : process.env.ANTI_LINK,
-    FULLALEXA: process.env.FULL_ALEXA === undefined ? 'false' : process.env.FULL_ALEXA,
-    OWNER: process.env.OWNER_NAME === undefined ? 'TOXIC DEVIL' : process.env.OWNER_NAME,
-    OWNERNUM: process.env.OWNER_NUMBER === undefined ? '0' : process.env.OWNER_NUMBER,
-    AUTOBIO: process.env.AUTO_BIO === undefined ? 'false' : process.env.AUTO_BIO,
-    SESSION: process.env.ALEXA_SESSION === undefined ? '' : process.env.ALEXA_SESSION,
-    BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
+    VERSION: 'v1.1.3',
+    SESSION: process.env.ASENA_SESSION === undefined ? '' : process.env.ASENA_SESSION,
+    EXT: process.env.EXT === undefined ? undefined : process.env.EXT,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
-    ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
-    ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.ibb.co/hdb4VFH/IMG-20210516-WA0008.jpg' : process.env.ALIVE_LOGO,
-    KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
-    MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
-    UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
-    WORKTYPE: process.env.WORK_TYPE === undefined ? 'public' : process.env.WORK_TYPE,
-    PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
-    DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
-    BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
-    AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
-    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'offline' : process.env.BOT_PRESENCE,
-    PVTDELMSG: process.env.PRIVATE_DELETING_MESSAGE === undefined ? 'true' : process.env.PRIVATE_DELETING_MESSAGE,
-    HANDLERS: process.env.HANDLERS === undefined ? '^[#.!]' : process.env.HANDLERS,
+    HANDLERS: process.env.HANDLERS === undefined ? '^[.]' : process.env.HANDLERS,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
-    DEVELOPER: 'TOXIC-DEVIL',
-    AUTHOR: 'TOXIC-DEVIL',
-    GIT: 'https://github.com/TOXIC-DEVIL/WhatsAlexa.git',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
         API_KEY: process.env.HEROKU_API_KEY === undefined ? '' : process.env.HEROKU_API_KEY,
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
-    DATABASE: DATABASE_URL === './whatsalexa.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
-    RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
+    DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL,
+        {
+            host: 'xxxxxx.eu-west-1.compute.amazonaws.com', dialect: 'postgres', ssl: true, protocol: "postgres", logging: DEBUG,
+            dialectOptions: { native: true, ssl: { require: true, rejectUnauthorized: false } }
+        }),
+    NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
+    CLR_SESSION: process.env.CLR_SESSION === undefined ? false : convertToBool(process.env.CLR_SESSION),
     SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
     DEBUG: DEBUG,
-    SUPPORT: "120363039806907810",
-    XTEAM_API: "ab9942f95c09ca89",
-    SPDF_API: "XO1eBCihbkFLAw15sHobUGhRQAUJObpf9OhyvKpknXvYAr1OA7lxvRuSOQMrUBbn",
-    WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG"
+    REMOVEBG: process.env.REMOVEBG_KEY === undefined ? "false" : process.env.REMOVEBG_KEY,
+    WARN_COUNT: process.env.WARN_COUNT === undefined ? 3 : process.env.WARN_COUNT,
+    WARN_MSG: process.env.WARN_MSG === undefined ? "Ok bie" : process.env.WARN_MSG,
+    ANTIJID: process.env.ANTIJID === undefined ? '' : process.env.ANTIJID,
+    STICKER_PACKNAME: process.env.STICKER_PACKNAME === undefined ? '🥰,lyfe00011' : process.env.STICKER_PACKNAME,
+    BRAINSHOP: process.env.BRAINSHOP === undefined ? "159501,6pq8dPiYt7PdqHz3" : process.env.BRAINSHOP
 };
