@@ -1,6 +1,3 @@
-## 🤔 What is WhatsAlexa?! 🤔
-- **WhatsAlexa** is a Helper WhatsApp Bot Written with **[Baileys](https://github.com/adiwajshing/baileys)** Which is hosted on **[Heroku Cloud Server](https://heroku.com).** Also Alexa has a **Lot of Commands/Features,** Including **Artificial Intelligence [ AI ] Features/Commands.**
-
 # [![Typing SVG](https://bit.ly/3tSyaJK)](https://github.com/TOXIC-DEVIL)
 
 <div align="center">
@@ -39,7 +36,7 @@ node alexa.js
 
 **You must Deploy on Heroku by clicking 'Deploy to Heroku' Button.**
 
-[![Deploy-WhatsAlexa](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/TOXIC-DEVIL/WhatsAlexa)
+[![Deploy-WhatsAlexa](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hileve/SplashDark)
 
 ## ❔ F A Q ( Frequently Asked Questions. ) ❔
 
