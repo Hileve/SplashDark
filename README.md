@@ -1,4 +1,4 @@
-## WhatsApp User Bot
+## SplashDark User Bot
 
 This is a Userbot based on WhatsAsena written by [Yusuf Usta](https://github.com/Quiec)
 
