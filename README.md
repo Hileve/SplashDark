@@ -1,125 +1,110 @@
-# [![Typing SVG](https://bit.ly/3tSyaJK)](https://github.com/TOXIC-DEVIL)
+## WhatsApp User Bot
 
-<div align="center">
-  <img src="https://rotf.lol/Whats-Alexa-Gif-TOXIC-DEVIL" width="200" height="200">
-  <h1>WhatsAlexa</h1>
-</div>
-<p align="center">
-    WhatsAlexa is a Helper WhatsApp Bot Written By @TOXIC-DEVIL with Baileys. Alexa has a lot of Features/Commans Including Voice Chat [ AI ].
-    <br>
+This is a Userbot based on WhatsAsena written by [Yusuf Usta](https://github.com/Quiec)
 
-<p align="center">
-<img src="https://img.shields.io/github/repo-size/TOXIC-DEVIL/WhatsAlexa?color=green&label=Repo%20total%20size&style=plastic">
-<a href="https://github.com/TOXIC-DEVIL/WhatsAlexa/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/TOXIC-DEVIL/WhatsAlexa?color=blue&style=flat-square"></a>
-<a href="https://github.com/TOXIC-DEVIL/WhatsAlexa/network/members"><img title="Forks" src="https://img.shields.io/github/forks/TOXIC-DEVIL/WhatsAlexa?color=pink&style=flat-square"></a>
+## What is WhatsAsena?
 
+**WhatsAsena,** is a WhatsApp bot written by [Yusuf Usta](https://github.com/Quiec). Does not log into your account It is written on WhatsApp Web API.
 
-## ⚙️ Setup ⚙️
-```
-bash <(curl -L rotf.lol/WhatsAlexa-Toxic-Devil)
-```
-```
-pkg install git
-pkg install nodejs
-git clone https://github.com/TOXIC-DEVIL/WhatsAlexa
-cd WhatsAlexa
-npm i @adiwajshing/baileys
-npm i chalk
-node alexa.js
-```
-  
-## 💫 Deploy & Run WhatsAlexa 💫
+## Setup
 
-**If You are Lazy to Download Termux or Concerned About Memory leaks, You can Use Below Button 'Run on Replit' to scan QR Code, Also Laptop/Computer is More Confortable To Scan the QR Code.**
+1. Click [SCAN](https://replit.com/@Nightbot2O/baileys-qr) and scan QR through Whatsapp Linked Devices Option in Your whatsapp App.
+2. You will get a long text that needs after 4th step (ASENA_SESSION).
+3. If You don't have a account in [Heroku](https://signup.heroku.com/), Create a account.
+4. Now click [DEPLOY](https://heroku.com/deploy?template=https://github.com/lyfe00011/whatsapp-bot) and Follow.
+   <br>
+   <a href="https://youtu.be/G4KknEgKWoA"><img src="https://img.shields.io/badge/-watch%20video-critical?style=for-the-badge&logo=youtube&logoColor=white">
+   <br>
+   <a href="https://chat.whatsapp.com/Ear1cUkcdvW4idBD9jqmyj"><img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20Group-lightgrey?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
-[![Run on Repl.it](https://repl.it/badge/github/TOXIC-DEVIL/WhatsAlexa)](https://replit.com/@TOXICDEVIL/WhatsAlexa)
-
-**You must Deploy on Heroku by clicking 'Deploy to Heroku' Button.**
-
-[![Deploy-WhatsAlexa](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Hileve/SplashDark)
-
-## ❔ F A Q ( Frequently Asked Questions. ) ❔
-
-### 💬 Can you read my messages?
-
-This project is open source so all the codes are clear. Neither less nor more; you can look what you want. **We absolutely do not have access to your accounts.**
-
-### 🔒 What about our security?
-
-If you are concerned about security, you can install it on your own computer. If you think someone else has captured your data, simply click on **Whatsapp> Three Dots> Whatsapp Web> Logout** from all sessions button.
-  
-### 💸 Is it paid?
-
-**Of course not.** It will never happen. 
-    
-### 😵 I am facing some errors/bug in Alexa, I want to request a feature or I have some doubts about Alexa, How can I Clear them all? 
-  
-You can clear all of them, by contacting Joining our support group, **[JOIN NOW!](https://chat.whatsapp.com/FsyTWS1ppuy0XzWtBbrKU8)**
-
-### 📃 How Can I Download the Bot Script?
-
-You Can **[Click Here](https://github.com/TOXIC-DEVIL/WhatsAlexa/archive/refs/heads/master.zip)** To Download The **Bot Script**.. This Script is Free, So **Don't Sell This Script in High Price.**
-
-### ⚙ Is this a Heroku bot?
-
-**Of Course** This bot works on **heroku.**
-
-### 📺 What is the language of this bot?
-
-There are **3 Languages** in this Bot - **English ( US ), Malayalam ( India ), Indonasian ( Indonasia ).** You can choose the language, **Its up to you.**
-
-### ❗ Does our number will banned from WhatsApp by Using This Bot?
-
-If you are concerned about that, Then you can just use bot on a [Fake Number](https://youtu.be/lFL6vFSKpEY). **[Also Read This](https://github.com/TOXIC-DEVIL/WhatsAlexa#-warning-)**
-
-### 🔄 Can I Edit this bot?
-
-**As per the license, You Can** But We Will Not Support. 🙃
-
-### ❔ How many features/commands are there in this bot?
-
-There are **50+** Features/Commands Are there in **this bot!**
+<a href="https://github.com/lyfe00011/whatsapp-bot/wiki/"><img src="https://img.shields.io/badge/plugins-blue?style=for-the-badge&logo=appveyor%22"/></a>
 
 <!--
-## ❗️ Disclaimer ❗️
+[![Run on Repl.it](https://replit.com/badge/github/lyfe00011/whatsapp-bot)](https://replit.com/@Nightbot2O/baileys-qr)
 
-The name **'WhatsAlexa'**, Which includes the word
-**'Whats'**, confuses users because of the name of the familiar
-bot **WhatsAsena**. The users are thinking that the
-**'WhatsAlexa' bot is a modified version of the 'WhatsAsena'**.
-This is **extremely wrong** and has nothing to do with WhatsAsena.
-Also You can check our docker file.
-**We use 'node: 15.2.0-alpine3.10' instead of 'whatsasena: latest'**.
-So please don't Compare **WhatsAlexa** and **WhatsAsena**.
--->
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/lyfe00011/whatsapp-bot) -->
 
-## ⚠ Warning ⚠
+| Active | Group commands |
+| :----: | :------------- |
+|   ✔️   | Kick           |
+|   ✔️   | Tag            |
+|   ✔️   | Add            |
+|   ✔️   | Warn           |
+|   ✔️   | Vote           |
+|   ✔️   | Invite         |
+|   ✔️   | Revoke         |
+|   ✔️   | Demote         |
+|   ✔️   | Promote        |
+|   ✔️   | Banbye         |
+|   ✔️   | Goodbye        |
+|   ✔️   | Welcome        |
+|   ✔️   | Schedule       |
+|   ✔️   | Auto-mute      |
+|   ✔️   | Mute/Unmute    |
+|   ✔️   | Common/Diff    |
 
-```
-By using kick, add, promote, demote Commands, Your WhatsApp account may be banned.
-WhatsAlexa or we are not responsible for your account, 
-This bot is intended for the purpose of having fun with some fun commands 
-and group management with some helpfull commands.
+| Active | Dowloader commands    |
+| :----: | :-------------------- |
+|   ✔️   | Saavn                 |
+|   ✔️   | Upload                |
+|   ✔️   | Yta/Ytv               |
+|   ✔️   | Unsplash              |
+|   ✔️   | Mediafire             |
+|   ✔️   | Pinterest             |
+|   ✔️   | SoundCloud            |
+|   ✔️   | TikTok video          |
+|   ✔️   | Twitter video         |
+|   ✔️   | Facebook video        |
+|   ✔️   | Instagram story       |
+|   ✔️   | YouTube audio/video   |
+|   ✔️   | Instagram video/image |
 
-If  you ended up spamming groups, getting reported left and right, 
-and you ended up in being fight with WhatsApp
-and at the end WhatsApp Team deleted your account. DON'T BLAME US.
+| Active | Misc Commands     | Usage                        |
+| :----: | :---------------- | :--------------------------- |
+|   ✔️   | Qr                | Reads QR code                |
+|   ✔️   | Ss                | Screenshot of web            |
+|   ✔️   | Url               | Gets url of media            |
+|   ✔️   | Trt               | Translates messages          |
+|   ✔️   | Mp3               | Video to mp3                 |
+|   ✔️   | Txt               | Image to text                |
+|   ✔️   | Afk               | Away from keyboard           |
+|   ✔️   | Cut               | Cuts mp3                     |
+|   ✔️   | Pdf               | Images to pdf                |
+|   ✔️   | Mp4               | Sticker to video             |
+|   ✔️   | Take              | Change sticker pack info     |
+|   ✔️   | Wiki              | Wikipedia search             |
+|   ✔️   | Meme              | Text on photos               |
+|   ✔️   | Trim              | Trims video                  |
+|   ✔️   | Find              | It finds song                |
+|   ✔️   | Attp              | Coloured text sticker        |
+|   ✔️   | Alive             | To check alive or not        |
+|   ✔️   | Whois             | Group or individual data     |
+|   ✔️   | Movie             | Shows Movie Info             |
+|   ✔️   | Merge             | It merge a videos            |
+|   ✔️   | Voice             | Voice to mp3                 |
+|   ✔️   | Topdf             | Documnet ot pdf              |
+|   ✔️   | Emoji             | Emoji to sticker             |
+|   ✔️   | Lydia             | Auto AI chat                 |
+|   ✔️   | Sticker           | Photo/video to sticker       |
+|   ✔️   | Reverse           | Reverse audio/video          |
+|   ✔️   | Unvoice           | Audio to voices              |
+|   ✔️   | Wasted            | Wasted logo                  |
+|   ✔️   | Trigged           | Triggered effect             |
+|   ✔️   | Forward           | Forwarding msg using jid     |
+|   ✔️   | Compress          | Compresses video             |
+|   ✔️   | Google            | Google reverse image search  |
+|   ✔️   | Upload            | Download from Url            |
+|   ✔️   | Weather           | Shows weather                |
+|   ✔️   | Getjids           | Gets jids of chats           |
+|   ✔️   | Removebg          | Removes background           |
+|   ✔️   | Setabout          | Sets bio                     |
+|   ✔️   | Setstatus         | Sets status                  |
+|   ✔️   | Pitch/low/bass    | Audio effects                |
+|   ✔️   | Histo/vector/aves | Audio to video               |
+|   ✔️   | Block/unblock     | Blocks/unblocks members      |
+|   ✔️   | Broadcast         | Custom Broadcasting Messages |
 
-No personal support will be provided / We won't spoon feed you. 
-If you need help
-you can contact - 
-```
-[TOXIC DEVIL](https://wa.me/2349053311892?text=I%20Have%20Seen%20Your%20WhatsAlexa%20Ropo%20😍%20I%20Got%20Your%20Number%20From%20GitHub%20😉)
+## Thanks To
 
-## 👨‍💻 Developers & Contributors 👨‍💻
-
- [![TOXIC-DEVIL](https://github.com/TOXIC-DEVIL.png?size=100)](https://github.com/TOXIC-DEVIL) |
-----|
-[TOXIC-DEVIL](https://github.com/TOXIC-DEVIL)  | 
-Author: Developer, Base, Bug Fixes, Commits, Modules | 
-
-## ✨ Special Features ✨
-
-- [x] Alexa Voice Chatbot [ This is not amazon alexa ]
-
-- [x] simi simi chatbot
+- [Yusuf Usta](https://github.com/Quiec) for [WhatsAsena](https://github.com/yusufusta/WhatsAsena)
+- [@adiwajshing](https://github.com/adiwajshing) for [Baileys](https://github.com/adiwajshing/Baileys)
